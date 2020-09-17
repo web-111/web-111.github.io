@@ -10,7 +10,7 @@ $(".close, #backdrop").click(function(){
     $("#form").hide();
     $('#form_res').show();
     $.post(
-        'telegram.php', // адрес обработчика
+        '/telegram.php', // адрес обработчика
          $("#form").serialize(), // отправляемые данные  		
         
         function(msg) { // получен ответ сервера  
